@@ -8,12 +8,6 @@
     background-color: gray;
 }
 
-table {
-    border-collapse: collapse;
-    table-layout: fixed;
-
-}
-
 .windowBlock {
     background-color: lightblue;
     border: solid .1vw;
@@ -34,3 +28,33 @@ table {
 .right {
     border-right: solid .1vw
 }
+
+table {
+    border-collapse: collapse;
+    /*table-layout: fixed;*/
+    display: inline-block;
+}
+
+.houseRow {
+    display: inline-block;
+}
+
+.houseRow > table {
+
+    margin: 0;
+}
+
+.highRise > .houseRow {
+    display: block;
+}
+
+.highRise {
+    background-color: silver;
+    border: solid .1vw;
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+
+
+
