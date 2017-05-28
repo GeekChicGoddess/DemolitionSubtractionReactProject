@@ -1,7 +1,6 @@
 .block {
     height: .1vw;
     width: .1vw;
-    transition: opacity 2s ease-in-out 1s;
 }
 
 .wallBlock {
@@ -30,9 +29,10 @@
 }
 
 table {
-    border-collapse: collapse;
+    /*border-collapse: collapse;*/
     /*table-layout: fixed;*/
     display: inline-block;
+    transition: opacity 2s ease-in-out 1s;
 }
 
 .houseRow {

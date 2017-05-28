@@ -6,7 +6,7 @@ import HouseHighrise from '../components/house_highrise';
 export default class App extends Component {
   render() {
     return (
-      <HouseHighrise/>
+      <House/>
     );
   }
 }
