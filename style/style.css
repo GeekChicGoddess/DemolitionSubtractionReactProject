@@ -1,0 +1,36 @@
+.block {
+    height: .1vw;
+    width: .1vw;
+    transition: opacity 2s ease-in-out 1s;
+}
+
+.wallBlock {
+    background-color: gray;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+
+}
+
+.windowBlock {
+    background-color: lightblue;
+    border: solid .1vw;
+}
+
+.top {
+    border-top: solid .1vw
+}
+
+.bottom {
+    border-bottom: solid .1vw
+}
+
+.left {
+    border-left: solid .1vw
+}
+
+.right {
+    border-right: solid .1vw
+}
