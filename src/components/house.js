@@ -78,7 +78,7 @@ export default class House extends Component{
             collapse: "collapse",
             opacity: 1,
             borderSpacing: 0,
-            marginTop: 0
+            marginTop: 0,
         };
 
 
@@ -87,8 +87,44 @@ export default class House extends Component{
 
 
 
+
+
+
     render() {
 
+       function handleClick (that) {
+
+            that.setState({
+                opacity: 0,
+                collapse: "separate",
+            });
+
+            let marginPercentage = 1;
+            let topMargin = -5;
+            let timesToRun = 1;
+            // let that = this;
+            const rightMove = setInterval(function () {
+                console.log("running");
+                if (timesToRun < 200) {
+                    that.setState({
+                        borderSpacing: marginPercentage + "px",
+                        marginTop: topMargin + "px"
+                    });
+                    marginPercentage += 2;
+                    topMargin -= 15;
+                    timesToRun++;
+                }
+                else {
+                    clearInterval(rightMove)
+                }
+            }, 5);
+        };
+
+        if(this.props.shouldAnimate == true) {
+            console.log("clicked state changd");
+            {handleClick(this)}
+        }
+        console.log(this.props.shouldAnimate);
 
       let style = {
           borderCollapse: this.state.collapse,
@@ -99,7 +135,7 @@ export default class House extends Component{
 
 
       return (
-          <table style={style} onClick={()=>this.props.onClick(this)}>
+          <table style={style} onClick={handleClick} type="house">
               <tbody>
               {firstLayer()}
               {secondFifthLayer()}
