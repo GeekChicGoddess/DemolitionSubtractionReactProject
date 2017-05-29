@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import HouseHighrise from '../components/house_highrise';
 
-export default class Hundreds extends Component {
-
-
-    render(){
+const Hundreds = (props) => {
 
 
         return(
@@ -15,11 +12,6 @@ export default class Hundreds extends Component {
 
             </div>
         );
-    }
+    };
 
-
-
-
-
-
-}
+export default Hundreds

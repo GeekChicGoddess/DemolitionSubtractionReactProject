@@ -81,6 +81,7 @@ export default class House extends Component{
             marginTop: 0
         };
 
+
     }
 
 
@@ -98,7 +99,7 @@ export default class House extends Component{
 
 
       return (
-          <table style={style}>
+          <table style={style} onClick={()=>this.props.onClick(this)}>
               <tbody>
               {firstLayer()}
               {secondFifthLayer()}

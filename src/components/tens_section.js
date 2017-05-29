@@ -3,10 +3,7 @@ import HouseRow from '../components/house_row';
 
 
 
-export default class Tens extends Component {
-
-
-    render(){
+const Tens = (props) => {
 
 
         return(
@@ -15,12 +12,9 @@ export default class Tens extends Component {
             <HouseRow/>
             </div>
         );
-    }
+    };
 
 
+export default Tens
 
-
-
-
-}
 

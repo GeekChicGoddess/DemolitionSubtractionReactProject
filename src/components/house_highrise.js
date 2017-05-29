@@ -1,11 +1,11 @@
 import React from 'react';
 import HouseRow from '../components/house_row'
 
-const HouseHighrise = () =>{
+const HouseHighrise = (props) =>{
 
     return(
 
-        <span className="highRise">
+        <span className="highRise"  onClick={props.onClick}>
             <HouseRow/>
             <HouseRow/>
             <HouseRow/>
