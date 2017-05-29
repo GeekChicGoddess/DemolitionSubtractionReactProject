@@ -68,32 +68,49 @@ const sixthLayer = () => {
 
 };
 
-const House = (props) => {
+export default class House extends Component{
 
 
+    constructor(props){
+        super(props);
 
-        let style = {
-            borderCollapse: props.collapse,
-            opacity: props.opacity,
-            borderSpacing: props.borderSpacing,
-            marginTop: props.marginTop
+        this.state = {
+            collapse: "collapse",
+            opacity: 1,
+            borderSpacing: 0,
+            marginTop: 0
         };
 
-
-        return (
-            <table style={style} onClick={props.onClick}>
-                <tbody>
-                {firstLayer()}
-                {secondFifthLayer()}
-                {thirdFourthLayer()}
-                {thirdFourthLayer()}
-                {secondFifthLayer()}
-                {sixthLayer()}
-                </tbody>
-            </table>
-        );
+    }
 
 
+
+
+    render() {
+
+
+      let style = {
+          borderCollapse: this.state.collapse,
+          opacity: this.state.opacity,
+          borderSpacing: this.state.borderSpacing,
+          marginTop: this.state.marginTop
+      };
+
+
+      return (
+          <table style={style}>
+              <tbody>
+              {firstLayer()}
+              {secondFifthLayer()}
+              {thirdFourthLayer()}
+              {thirdFourthLayer()}
+              {secondFifthLayer()}
+              {sixthLayer()}
+              </tbody>
+          </table>
+      );
+
+  }
 };
 
-export default House
+

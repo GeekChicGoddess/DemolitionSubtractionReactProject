@@ -1,3 +1,32 @@
+#problem{
+
+    display: inline-block;
+}
+
+h4 {
+    display: inline-block;
+}
+
+form {
+    display: inline-block;
+}
+
+#hundreds {
+    display: inline-block;
+    max-width: 40%;
+}
+
+#tens {
+    display: inline-block;
+    max-width: 40%;
+}
+
+#units {
+    display: inline-block;
+    max-width: 10%;
+}
+
+
 .block {
     height: .1vw;
     width: .1vw;
@@ -46,6 +75,7 @@ table {
 
 .highRise > .houseRow {
     display: block;
+    max-width: 100%;
 }
 
 .highRise {
